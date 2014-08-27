@@ -1,0 +1,7 @@
+app.title
+app.name
+app.description
+app.keywords = []
+app.image
+app.cssFiles = []
+app.jsFiles = []

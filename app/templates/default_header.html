@@ -1,0 +1,26 @@
+<header>
+  {% include 'default_nav.html' %}
+
+  <!-- Cabeçalho -->
+  <div class="container-fluid text-center titulo-header">
+    <div class="col-sm-8 col-sm-offset-2 col-xs-12">
+      <h2>{{app.name}}</h2>
+      {% if app.linha_fina %}
+        <h4>{{app.linha_fina}}</h4>
+      {% endif %}
+    </div>
+    <div class="col-sm-2 social-sharing visible-sm visible-md visible-lg">
+      <!-- AddThis Button BEGIN -->
+      <div class="addthis_toolbox addthis_default_style addthis_16x16_style">
+        {% if app.description %}
+          <a class="addthis_button_twitter" addthis:title="{{app.description}} #estadaodados"></a>
+          <a class="addthis_button_facebook" addthis:title="{{app.description}} #estadaodados"></a>
+        {% else %}
+          <a class="addthis_button_twitter" addthis:title="Projeto do Estadão Dados #estadaodados"></a>
+          <a class="addthis_button_facebook" addthis:title="Projeto do Estadão Dados #estadaodados"></a>
+        {% endif %}
+      </div>
+      <!-- AddThis Button END -->
+    </div>
+  </div>
+</header>

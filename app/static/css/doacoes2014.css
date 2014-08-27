@@ -1,0 +1,55 @@
+#chart {
+  width: 100%;
+  height: 80%;
+  background: #ddd;
+  overflow: hidden;
+  font-size: 12px;
+}
+
+text {
+  pointer-events: none;
+}
+
+.grandparent text {
+  font-weight: bold;
+  font-size: 12px;
+}
+
+rect {
+  fill: none;
+  stroke: #fff;
+  storke-width: 2px;
+}
+
+rect.parent,
+.grandparent rect {
+  stroke-width: 2px;
+}
+
+rect.child {
+  stroke-width: 2px;
+}
+
+.grandparent rect {
+  fill: orange;
+}
+
+.grandparent:hover rect {
+  fill: #ee9700;
+}
+
+.children rect.parent,
+.grandparent rect {
+  cursor: pointer;
+}
+
+.children rect.parent {
+  fill: #7f8c8d;
+  fill-opacity: .7;
+}
+
+.children:hover rect.child {
+  fill: #7f8c8d;
+}
+
+
